@@ -1,0 +1,77 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+}
+a:hover{
+    color:white;
+}
+h1 {
+    font-size: 2.8125em;
+    color: #08a180  ;
+    margin: 1rem 0;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+
+
+}
+
+h2 {
+    text-align: center;
+    color: red;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    letter-spacing: -0.02em;
+}
+
+h3 {
+
+    color: #08a180  !important;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    font-size: 20px;
+    border-bottom: 1px solid #08a180  ;
+    padding: 16px;
+    text-transform: uppercase;
+
+}
+
+.fa.fa-car,
+.fa.fa-history,
+.fa.fa-user-circle {
+    color: #08a180  ;
+    font-size: 21px !important;
+    float: left;
+    margin-top: 34px;
+    margin-right: 12px;
+}
+
+i.fa.fa-question-circle {
+    padding: 3px;
+    color: #3a5371  ;
+}
+
+.section-pers {
+    border-left: 1px solid #08a180 ;
+    padding: 46px;
+    color: #d0cef2 important;
+    box-shadow: 0 16px 50px 5px rgb(8 161 128 / 14%);
+    margin-top: 41px;
+}
+
+.requis {
+    color: red;
+}
+
+
+
+
+.form-select:disabled {
+background-color: #1c78d214 !important;
+}
+
+button {
+    background: #193e80 !important;
+}
