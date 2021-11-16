@@ -146,44 +146,12 @@ function getFormData() {
             natureSinistre36DerniersMois: naturesSinistres[i],
           }))
         })(),
-        // alcoolemie: { 
-        // 	sanction: {
-        // 		dateInitialPermisApresAnnulation: "2020-11-1",
-        // 		dateAnnulationPermis36DerniersMois: "2020-11-1",
-        // 		dateSanction36DerniersMois: "2020-11-1",
-        // 		dateSuspensionPermis36DerniersMois: "2020-11-1",
-        // 		dateInfraction36DerniersMois: "2020-11-1",
-        // 		typeSuspensionPermis36DerniersMois: "Suspension permis",
-        // 		typeSanction: "Suspension permis",
-        // 		suspensionPermisMotif36DerniersMois: "Alcoolemie",
-        // 		nombreSuspensionPermis36AvecSinistreDerniersMois: 1,
-        // 		nombreSuspensionPermis36SansSinistreDerniersMois: 2,
-        // 		nombreMoisSuspensionPermis36DerniersMois: 6
-        // 	},
-        // 	dateDernierAlcoolemie36DerniersMois: "2020-11-1",
-        // 	nombreControlesPositifsAlcoolemie36DerniersMois: 1,
-        // 	isRefusTestAlcoolemie36DerniersMois: "Non",
-        // 	isDelitDeFuiteAlcoolemie36DerniersMois: "Oui",
-        // 	controleAlcoolemieSuiteA36DerniersMois: "Controle routier",
-        // 	controleAlcoolemieMethode36DerniersMois: "prise de sang",
-        // 	tauxAlcoolemie: "2.0",
-        // 	isAnnulationOuSuspensionPermis36DerniersMois: "suspension_permis"
-        // },
-        // stupefiant: {
-        // 	sanction: {
-        // 		typeAnnulationPermis36DerniersMois: "Annulation permis",
-        // 		typeSanction: "Annulation permis",
-        // 		annulationPermisMotif36DerniersMois: "Stupefiant",
-        // 		annulationPermisAvecOuSansSinistre36DerniersMois: "Sans sinistre"
-        // 	},
-        // 	dateDernierStupefiant36DerniersMois: "2020-11-1",
-        // 	nombreControlesPositifsStupefiants36DerniersMois: 1,
-        // 	isRefusTestStupefiant36DerniersMois: "Non",
-        // 	isDelitDeFuiteStupefiant36DerniersMois: "Non",
-        // 	controleStupefiantSuiteA36DerniersMois: "Controle routier",
-        // 	controleStupefiantMethode36DerniersMois: "prise de sang",
-        // 	isAnnulationOuSuspensionPermis36DerniersMois: "annulation_permis"
-        // }
+        alcoolemie: { 
+        	sanction: {
+        		typeSuspensionPermis36DerniersMois: $('#typeSanction').val(),
+        		typeSanction: $('#typeSanction').val(),
+        	},
+        },
       },
       dateNaissance: $('#dateNaissance').val(),
       datePermis: $('#datePermis').val(),
