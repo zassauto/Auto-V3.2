@@ -91,7 +91,9 @@ $(function() {
   })
     
   $('#submit').on('click', function() {
-    $.ajax({ type: "POST", url: "https://assurancezenith.com:99/devis-api/v2/src/public/auto", data: getFormData(), dataType: 'json',
+    const data = getFormData();
+    console.log(data);
+    $.ajax({ type: "POST", url: "https://assurancezenith.com:99/devis-api/v2/src/public/auto", data, dataType: 'json',
       success: function(data) { console.log("success", data); },
       error: function(error) { console.log("error", error); }
     })
@@ -131,16 +133,16 @@ function getFormData() {
     },
     conducteurPrincipal: {
       antecedents: {
-        isEteAssure36DerniersMois: $('#isEteAssure36DerniersMois').val(),
+        isEteAssure36DerniersMois: $('input[name=isEteAssure36DerniersMois]:checked').val(),
         bonusMalus: $('#bonusMalus').val().split(' ')[0],
-        isEteResilie36DerniersMois: $('#isEteResilie36DerniersMois').val(),
+        isEteResilie36DerniersMois: $('input[name=isEteResilie36DerniersMois]:checked').val(),
         motifResiliation36DerniersMois: $('#motifResiliation36DerniersMois').val(),
         dateResiliation36DerniersMois: $('#dateResiliation36DerniersMois').val(),
-        isEuSinistres36DerniersMois: $('#isEuSinistres36DerniersMois').val(),
+        isEuSinistres36DerniersMois: $('input[name=isEuSinistres36DerniersMois]:checked').val(),
         sinistres36DerniersMois: (() => {
           const datesSinistres = [...$('[name=dateSinistre36DerniersMois').map(function () { return $(this).val() })];
           const naturesSinistres = [...$('[name=natureSinistre36DerniersMois').map(function () { return $(this).val() })];
-      
+          
           return datesSinistres.map((date, i) => ({
             dateSinistre36DerniersMois: date,
             natureSinistre36DerniersMois: naturesSinistres[i],
