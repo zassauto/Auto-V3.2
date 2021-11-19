@@ -93,7 +93,7 @@ $(function() {
   $('#submit').on('click', function() {
     const data = getFormData();
     console.log(data);
-    $.ajax({ type: "POST", url: "https://assurancezenith.com:99/devis-api/v2/src/public/auto", data, dataType: 'json',
+    $.ajax({ type: "POST", url: "https://51.89.218.94:99/devis-api/v2/src/public/auto", data, dataType: 'json',
       success: function(data) { console.log("success", data); },
       error: function(error) { console.log("error", error); }
     })
