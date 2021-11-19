@@ -94,7 +94,7 @@ $(function() {
     const data = getFormData();
     console.log(data);
     $.ajax({ type: "POST", url: "https://51.89.218.94:99/devis-api/v2/src/public/auto", data, dataType: 'json',
-      success: function(data) { console.log("success", data); },
+      success: function(data) { window.location.href = '/Auto-V1.2/confirmation.html'; },
       error: function(error) { console.log("error", error); }
     })
   })
