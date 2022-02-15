@@ -1,4 +1,4 @@
-const baseUrl = 'https://cars-api.zenithassurance.net/src/public/';
+const baseUrl = 'https://assurancezenith.com:99/cars-api/src/public/';
 const carAPIURLs = {
   year: '', 
   marque: 'cars/marques', 
@@ -93,7 +93,7 @@ $(function() {
   $('#submit').on('click', function() {
     const data = getFormData();
     console.log(data);
-    $.ajax({ type: "POST", url: "https://zenith-france.fr:99/devis-api/v2/src/public/auto", data, dataType: 'json',
+    $.ajax({ type: "POST", url: "https://assurancezenith.com:99/devis-api/v2/src/public/auto", data, dataType: 'json',
       success: function(data) { window.location.href = '/Auto-V3.2/confirmation.html'; },
       error: function(error) { console.log("error", error); }
     })
